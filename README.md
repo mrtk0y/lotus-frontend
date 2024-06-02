@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 - [x] All images fade in.
 - [~] Implement lazy load image.
 - [x] Customize the highlight and selection effect of the cell.
-- [x] Improve UX loading by skeleton loading.
+- [x] Improve UX loading by skeleton loading. - Used in tab NowPlaying
 - [x] Enhance responsive.
 
 The following **additional** features are implemented:
