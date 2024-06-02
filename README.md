@@ -27,9 +27,11 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- List anything else that you can get done to improve the app functionality!
 
-- [ ]
+- [ ] Search bar with API instead of Local
+- [ ] Detail in SideBar could have fetch specific detail API for more detail information
+- [ ] 
 
 ## Requirements
 
