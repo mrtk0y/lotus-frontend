@@ -18,7 +18,7 @@ const MovieVerticalCard = ({
 				alt={movie.title}
 				className="movie-poster h-40 w-full object-cover aspect-video fade-in-image"
 			/>
-			<p className="px-2 h-10 line-clamp-2 font-semibold">{movie.title}</p>
+			<div className="px-2 h-10 line-clamp-2 font-semibold">{movie.title}</div>
 		</div>
 	);
 };

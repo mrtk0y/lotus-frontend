@@ -19,9 +19,9 @@ const MovieHorizontalCard2 = ({
 				className="movie-poster h-48 w-40 object-cover aspect-video fade-in-image"
 			/>
 			<div className="flex flex-col gap-2 grow p-4">
-				<p className="font-semibold">{movie.title}</p>
-				<p>Vote: {movie.vote_average}</p>
-				<p className="line-clamp-4">OverView:{movie.overview}</p>
+				<div className="font-semibold">{movie.title}</div>
+				<div>Vote: {movie.vote_average}</div>
+				<div className="line-clamp-4">OverView:{movie.overview}</div>
 			</div>
 		</div>
 	);
