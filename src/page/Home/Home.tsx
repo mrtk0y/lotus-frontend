@@ -2,12 +2,13 @@ import { useState } from "react";
 
 import type { TMovie } from "../../api/movie/type";
 import Drawer from "../../components/Drawer";
-import CardSkelton from "../../components/Skeleton";
+import IconGrid from "../../components/Icon/Grid";
+import IconList from "../../components/Icon/List";
 import { getImageUrl } from "../../utils/getImageUrl";
 import NowPlaying from "./NowPlaying";
 import Popular from "./Popular";
 import TopRate from "./TopRate";
-import { useStoreMovie } from "./zustand/useStoreMovie";
+import { VIEW_TYPE, useStoreMovie } from "./zustand/useStoreMovie";
 
 enum TYPE_LIST {
 	NOW_PLAYING = "nowPlaying",
@@ -39,10 +40,10 @@ const typeList = [
 	},
 ];
 function Home() {
-	const { selectedMovie, updateSelectedMovie } = useStoreMovie();
+	const { selectedMovie, updateSelectedMovie, setViewType, viewType } =
+		useStoreMovie();
 
 	const [selectType, setSelectType] = useState(TYPE_LIST.NOW_PLAYING);
-	console.log("🚀 ~ Home ~ selectType:", selectType);
 	const [searchInput, setSearchInput] = useState("");
 
 	const handleChangeType = (type: TYPE_LIST) => {
@@ -53,7 +54,7 @@ function Home() {
 	return (
 		<div className="">
 			<div className="">
-				<div className="flex">
+				<div className="flex justify-between">
 					<div className="flex gap-1 border-1 border-darkBlue border-solid rounded-full ">
 						{typeList.map((type) => {
 							if (!type.isShow) {
@@ -81,6 +82,25 @@ function Home() {
 								</div>
 							);
 						})}
+					</div>
+
+					<div className="flex gap-1">
+						<IconGrid
+							onClick={() => setViewType(VIEW_TYPE.GRID)}
+							className={`w-6 h-6 cursor-pointer  ${
+								viewType === VIEW_TYPE.GRID
+									? "text-lightGreen"
+									: "hover-text-lightBlue"
+							}`}
+						/>
+						<IconList
+							onClick={() => setViewType(VIEW_TYPE.LIST)}
+							className={`w-6 h-6 cursor-pointer  ${
+								viewType === VIEW_TYPE.LIST
+									? "text-lightGreen"
+									: "hover-text-lightBlue"
+							}`}
+						/>
 					</div>
 				</div>
 

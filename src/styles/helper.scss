@@ -37,7 +37,9 @@
   padding-top: 4px;
   padding-bottom: 4px;
 }
-
+.basis-100 {
+  flex-basis: 100%;
+}
 .m-1 {
   margin: 4px;
 }
@@ -715,4 +717,7 @@
 }
 .w-60per {
   width: 60%;
+}
+.grow {
+  flex-grow: 1;
 }

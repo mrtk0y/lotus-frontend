@@ -1,7 +1,7 @@
 import type { TMovie } from "../../api/movie/type";
 import { getImageUrl } from "../../utils/getImageUrl";
 
-const MovieHorizontalCard = ({
+const MovieVerticalCard = ({
 	movie,
 	isMatched,
 }: { movie: TMovie; isMatched: boolean }) => {
@@ -16,11 +16,11 @@ const MovieHorizontalCard = ({
 				loading="lazy"
 				src={getImageUrl(movie.backdrop_path)}
 				alt={movie.title}
-				className="movie-poster h-40 w-full object-cover aspect-video"
+				className="movie-poster h-40 w-full object-cover aspect-video fade-in-image"
 			/>
-			<p className="px-2 h-10 line-clamp-2">{movie.title}</p>
+			<p className="px-2 h-10 line-clamp-2 font-semibold">{movie.title}</p>
 		</div>
 	);
 };
 
-export default MovieHorizontalCard;
+export default MovieVerticalCard;

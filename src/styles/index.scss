@@ -47,6 +47,9 @@ p {
 .hover-bg-darkBlue:hover {
   background-color: rgb(var(--tmdbDarkBlue)) !important;
 }
+.hover-text-lightBlue:hover {
+  color: rgb(var(--tmdbLightBlue)) !important;
+}
 
 .bg-white {
   background-color: white;
@@ -54,7 +57,9 @@ p {
 .bg-black {
   background-color: black;
 }
-
+.text-black {
+  color: black;
+}
 .text-gradient-lightGreen {
   background: linear-gradient(to right, #c0fecf 0, #1ed5a9 100%);
   -webkit-background-clip: text;
@@ -101,6 +106,18 @@ p {
   100% {
     opacity: 0.5;
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in-image {
+  animation: fadeIn 3s;
 }
 
 @-webkit-keyframes hintloading {
