@@ -29,6 +29,8 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
+- [ ]
+
 ## Requirements
 
 - Please use ReactJS with typescript
