@@ -25,6 +25,8 @@ The following **optional** features are implemented:
 - [x] Improve UX loading by skeleton loading. - Used in tab NowPlaying
 - [x] Enhance responsive.
 
+**All the CSS is used in folder Styles**
+
 The following **additional** features are implemented:
 
 - List anything else that you can get done to improve the app functionality!
