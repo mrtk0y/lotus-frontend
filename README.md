@@ -29,9 +29,10 @@ The following **additional** features are implemented:
 
 - List anything else that you can get done to improve the app functionality!
 
+- [ ] Make pagination or infinite scroll
 - [ ] Search bar with API instead of Local
 - [ ] Detail in SideBar could have fetch specific detail API for more detail information
-- [ ] 
+- [ ] Improvise in UI
 
 ## Requirements
 
