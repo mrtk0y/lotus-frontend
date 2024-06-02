@@ -31,7 +31,7 @@ const ListMovieWithoutSlide = ({
 						<div
 							key={movie.id}
 							className={`
-								px-1 py-1  cursor-pointer
+								px-1 py-1  cursor-pointer focus
 								${isMatched ? "" : "hidden"}
 								${
 									viewType === VIEW_TYPE.GRID
