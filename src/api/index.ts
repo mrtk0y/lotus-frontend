@@ -6,9 +6,7 @@ const api = axios.create({ baseURL: API_URL });
 api.interceptors.request.use((config) => {
 	const accessToken = ACCESS_TOKEN;
 
-	const isVerifyIpRequest = config.url === "/user-ip/verify";
-
-	if (accessToken && !isVerifyIpRequest) {
+	if (accessToken) {
 		config.headers = {
 			Authorization: `Bearer ${accessToken}`,
 			...config.headers,
