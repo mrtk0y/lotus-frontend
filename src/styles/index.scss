@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-darkBlue {
+  background-color: rgb(var(--tmdbDarkBlue));
+}
+.text-darkBlue {
+  color: rgb(var(--tmdbDarkBlue));
+}
+.bg-lightBlue {
+  background-color: rgb(var(--tmdbLightBlue));
+}
+.text-lightBlue {
+  color: rgb(var(--tmdbLightBlue));
+}
+.bg-lighterGreen {
+  background-color: rgb(var(--tmdbLighterGreen));
+}
+.text-lighterGreen {
+  color: rgb(var(--tmdbLighterGreen));
+}
+.bg-lightGreen {
+  background-color: rgb(var(--tmdbLightGreen));
+}
+.text-lightGreen {
+  color: rgb(var(--tmdbLightGreen));
+}
+.hover-bg-lightGreen:hover {
+  background-color: rgb(var(--tmdbLightGreen)) !important;
+}
+.hover-text-lightGreen:hover {
+  color: rgb(var(--tmdbLightGreen)) !important;
+}
+.hover-text-darkBlue:hover {
+  color: rgb(var(--tmdbDarkBlue)) !important;
+}
+.hover-bg-darkBlue:hover {
+  background-color: rgb(var(--tmdbDarkBlue)) !important;
+}
+
+.text-gradient-lightGreen {
+  background: linear-gradient(to right, #c0fecf 0, #1ed5a9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(
+    to right,
+    rgba(var(--tmdbLighterGreen), 1) 0%,
+    rgba(var(--tmdbLightGreen), 1) 100%
+  );
+}
+
+.border-lightGreen {
+  border-color: var(--tmdbLightGreen);
+}
+
+.border-darkBlue {
+  border-color: var(--tmdbDarkBlue);
+}
+.bg-transparent {
+  background-color: transparent;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  --scrollerGrey: 219, 219, 219;
+  --lightGrey: 227, 227, 227;
+  --darkerGrey: 200, 200, 200;
+  --vibrantDarkBlue: 6, 37, 65;
+  --vibrantLightBlue: 0, 118, 241;
+  --tmdbDarkBlue: 3, 37, 65;
+  --tmdbLightBlue: 1, 180, 228;
+  --tmdbLighterGreen: 192, 254, 207;
+  --tmdbLightGreen: 30, 213, 169;
+  --tmdbLogoGreen: 144, 206, 161;
+  --tmdbLogoOrange: 253, 193, 112;
+  --tmdbLogoRed: 217, 59, 99;
+  --accountSilver: 149, 149, 149;
+  --accountPink: 234, 20, 140;
+  --accountPurple: 128, 91, 231;
+  --accountGreen: 1, 210, 119;
+  --accountTeal: 1, 198, 172;
+  --accountLightBlue: 1, 180, 228;
+  --accountBlue: 1, 119, 210;
+  --accountOrange: 210, 119, 1;
+  --accountYellow: 210, 144, 1;
+  --accountRed: 212, 2, 66;
+  --imageBorderRadius: 8px;
+  --maxPrimaryPageWidth: 1400px;
+}

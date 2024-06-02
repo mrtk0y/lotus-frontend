@@ -27,6 +27,11 @@ const ReactQueryContext: React.FC<PropsWithChildren> = ({ children }) => {
 	const queryClient = useMemo(
 		() =>
 			new QueryClient({
+				defaultOptions: {
+					queries: {
+						retry: 1,
+					},
+				},
 				mutationCache: new MutationCache({
 					onError(error) {
 						handleAuthError(error as AxiosError);
